@@ -1,7 +1,7 @@
 "use strict";
 
 // Подключение функции из другого файла
-import { maxElementThree } from "../src/_functions.js";
+import { maxElementThree, sOperand } from "../src/_functions.js";
 
 // Задача запросить у пользователя
 // 5 чисел и найти наибольшее среди 3 чисел
@@ -34,3 +34,16 @@ let maxEl2 = maxElementThree(operand4, operand1, operand5);
 
 // Вывод результата
 alert("Максимальное значение: " + maxEl2);
+
+// Следующая задача: найти корень от operand1 и operand2
+// Используем функцию для рассчёта (в файле _functions)
+let result = sOperand(operand1);
+
+// Вывод результата
+alert("Корень от operand1: " + result);
+
+// Перезапись переменной result
+result = sOperand(operand2);
+
+// Вывод результата
+alert("Корень от operand2: " + result);

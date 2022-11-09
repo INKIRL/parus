@@ -24,5 +24,14 @@
     return mEl;
 }
 
+/**
+ * Нахождение корня от переменной
+ * @param { Number } op аргумент корня
+ * @returns { Number }
+ */
+function sOperand(op) {
+    return Math.sqrt(op);
+}
+
 // Видимость для других файлов и подключени функций
-export { maxElementThree };
+export { maxElementThree, sOperand };
